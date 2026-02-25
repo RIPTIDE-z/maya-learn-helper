@@ -1,0 +1,9 @@
+/.history
+/.venv
+/.vscode
+/.idea
+
+.env.prod
+test.py
+
+*.pyc

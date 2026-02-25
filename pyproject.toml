@@ -1,0 +1,39 @@
+[project]
+name = "R-bot"
+version = "0.1.0"
+description = "R-bot"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "nonebot2[fastapi,httpx,websockets]>=2.4.4",
+    "nb-cli>=1.4.2",
+    "nonebot-adapter-qq>=1.6.6",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+    "pyright[nodejs]>=1.1.408",
+]
+
+[tool.pyright]
+pythonVersion = "3.12"
+pythonPlatform = "All"
+typeCheckingMode = "standard"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501", "RUF003", "B008"]
+
+# Nonebot项目设置
+[tool.nonebot]
+plugin_dirs = ["src/plugins"]
+builtin_plugins = ["echo"]
+adapters = [
+    { name = "QQ", module_name = "nonebot.adapters.qq" },
+]
+
