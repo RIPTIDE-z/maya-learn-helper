@@ -25,7 +25,6 @@ def get_authorization_headers():
     token = get_access_token()
     authorization_headers = {
         "Authorization": f"QQBot {token}",
-        "X-Union-Appid": appId,
     }
 
     return authorization_headers
