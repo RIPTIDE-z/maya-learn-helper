@@ -3,7 +3,9 @@
 /.vscode
 /.idea
 
+/data
+
 .env.prod
-test.py
+/tests
 
 *.pyc

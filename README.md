@@ -1,6 +1,6 @@
-# R-bot
+# Maya_Learn_Helper
 
-- 基于Nonebot2框架的官方QQ机器人
+- Nonebot2插件，用于qq官方群聊机器人
 - 目标
   - [ ] maya api的查询
 
@@ -25,7 +25,7 @@
 
 ## 开发说明
 
-- 提交代码前使用`pyright`/`ruff`进行代码检查与格式化
+- 提交代码前可使用`pyright`/`ruff`进行代码检查与格式化
   ```shell
   uv run ruff check .
   uv run ruff format .
